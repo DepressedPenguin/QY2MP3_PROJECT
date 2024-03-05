@@ -1,0 +1,82 @@
+.input_div {
+  width: 50%;
+  height: 145px;
+  padding: 10px;
+  margin: auto;
+}
+
+.sub_input {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 25% 45% 25%;
+  padding: 1px;
+  margin-top: 20px;
+  border: 1px solid #191919;
+  border-radius: 5px;
+  box-shadow: 2px 3px 2px 2px #191919;
+}
+
+.input_grids {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.intert_url_p {
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 7px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.qoute_convert {
+  background-color: white;
+  padding: 7px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.qoute_convert p {
+  float: right;
+}
+.qoute_convert #mp3_color {
+  color: #e93636;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.input_grids input {
+  width: 80%;
+  height: 40px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+input {
+  padding: 2px;
+}
+
+.input_grids button {
+  width: 15%;
+  height: 46px;
+  font-family: "Nunito", sans-serif;
+  background-color: #191919;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .input_div {
+    width: 90%;
+  }
+  .input_grids button {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */

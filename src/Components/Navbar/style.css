@@ -1,0 +1,86 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar_header {
+  width: 100%;
+  height: 200px;
+  background-color: #191919;
+}
+
+.sub_navbar {
+  width: 75%;
+  height: 60px;
+  margin: auto;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.left_home_element {
+  width: 80%;
+  height: 100%;
+}
+
+.dark_mode_lang_icons {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#split_border {
+  color: white;
+}
+
+.ul_list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ul_list li {
+  list-style-type: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#languages_select {
+  height: 30px;
+  width: 55px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: whitesmoke;
+}
+
+.logo {
+  width: 40%;
+  height: 70%;
+  margin: auto;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .sub_navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .dark_mode_lang_icons {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

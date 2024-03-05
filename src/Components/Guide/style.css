@@ -1,0 +1,68 @@
+.Guide {
+  width: 95%;
+  height: 450px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.social_media {
+  background-color: #191919;
+  width: 5%;
+  height: 100%;
+}
+
+.empty_box {
+  background-color: #191919;
+  width: 5%;
+  height: 100%;
+}
+
+.main_guide {
+  background-color: #191919;
+  width: 90%;
+  height: 100%;
+}
+
+.headline_h1 {
+  border-bottom: 1px solid white;
+  color: white;
+  text-align: center;
+}
+
+.guide_imgs {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 85%;
+  grid-gap: 10px 10px;
+  padding: 15px;
+}
+
+.box_show {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title_pic {
+  width: 100%;
+  height: 15%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic_guide {
+  width: 100%;
+  height: 85%;
+  border: 1px solid black;
+}/*# sourceMappingURL=style.css.map */
