@@ -3,56 +3,52 @@
 .Guide {
   width: 95%;
   height: 450px;
-  border: 2px solid black;
+  // border: 2px solid black;
   border-radius: 5px;
   margin: auto;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  //   gap: 10px; LATER RETURN THIS WE NEED IT
-  padding: 20px;
-}
-
-.social_media {
-  background-color: #191919;
-  width: 5%;
-  height: 100%;
-}
-
-.empty_box {
-  background-color: #191919;
-  width: 5%;
-  height: 100%;
+  gap: 10px;
+  padding: 10px;
 }
 
 .main_guide {
-  background-color: #191919;
-  width: 90%;
+  // background-color: #191919;
+  width: 100%;
   height: 100%;
 }
 
 .headline_h1 {
-  border-bottom: 1px solid white;
-  color: white;
+  // border-bottom: 1px solid white;
+  font-size: 1rem;
+  color: #191919;
   text-align: center;
+  border-bottom: 1px solid #191919;
 }
 
 .guide_imgs {
   width: 100%;
   height: 100%;
-  //   border: 1px solid white;
+  font-size: 16px;
+  font-weight: 700;
+  // border: 1px solid white;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 85%;
   grid-gap: 10px 10px;
-  padding: 15px;
+  // padding: 5px;
 }
 
 .box_show {
-  background-color: white;
-
+  background-color: #191919;
+  border: 3px solid #191919;
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+  // border-radius: 5px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -62,8 +58,10 @@
 .title_pic {
   width: 100%;
   height: 15%;
-  font-weight: 00;
-  border: 1px solid black;
+  // font-weight: 00;
+  // border: 1px solid black;
+  text-decoration: underline;
+  // gap: 10px 10px;
 
   display: flex;
   align-items: center;
@@ -73,11 +71,32 @@
 .pic_guide {
   width: 100%;
   height: 80%;
-  border: 1px solid black;
+  // border: 1px solid black;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Guide {
+    width: 100%;
+  }
+
+  .guide_imgs {
+    width: 95%;
+    height: 100%;
+    // border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px 10px;
+  }
+
+  .main_guide {
+    width: 100%;
+    background-color: white;
+    border: 1px solid red;
   }
 }

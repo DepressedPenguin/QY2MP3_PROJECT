@@ -19,13 +19,13 @@ $bgColor: #191919;
   grid-template-rows: 25% 45% 25%;
   //   grid-gap: 3px;
   padding: 1px;
-  margin-top: 20px;
+  margin-top: 10px;
 
   border: 1px solid $bgColor;
   border-radius: 5px;
   //   border-radius: 15px;
   //   background-color: $bgColor;
-  box-shadow: 2px 3px 2px 2px $bgColor;
+  box-shadow: 2px 3px 3px 4px $bgColor;
 }
 
 .input_grids {
@@ -43,7 +43,7 @@ $bgColor: #191919;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   //   border-radius: 5px;
-  padding: 7px;
+  padding: 10px;
   font-weight: 700;
   letter-spacing: 0.2px;
 }
@@ -84,12 +84,28 @@ input {
   width: 15%;
   height: 46px;
   font-family: "Nunito", sans-serif;
+  background-color: $bgColor;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.btn_con {
+  width: 15%;
+  height: 46px;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 
   background-color: $bgColor;
   color: white;
   border-radius: 5px;
   border: none;
-  font-size: 20px;
+  // font-size: 18px;
 }
 
 // Make Input Responive

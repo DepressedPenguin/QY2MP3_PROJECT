@@ -12,10 +12,10 @@
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 25% 45% 25%;
   padding: 1px;
-  margin-top: 20px;
+  margin-top: 10px;
   border: 1px solid #191919;
   border-radius: 5px;
-  box-shadow: 2px 3px 2px 2px #191919;
+  box-shadow: 2px 3px 3px 4px #191919;
 }
 
 .input_grids {
@@ -29,7 +29,7 @@
   background-color: white;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  padding: 7px;
+  padding: 10px;
   font-weight: 700;
   letter-spacing: 0.2px;
 }
@@ -66,10 +66,25 @@ input {
   height: 46px;
   font-family: "Nunito", sans-serif;
   background-color: #191919;
+  cursor: pointer;
   color: white;
   border-radius: 5px;
   border: none;
   font-size: 20px;
+}
+
+.btn_con {
+  width: 15%;
+  height: 46px;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #191919;
+  color: white;
+  border-radius: 5px;
+  border: none;
 }
 
 @media screen and (max-width: 1200px) {

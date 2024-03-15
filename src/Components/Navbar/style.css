@@ -13,7 +13,6 @@
   width: 75%;
   height: 60px;
   margin: auto;
-  border-bottom: 1px solid grey;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -27,6 +26,13 @@
 .dark_mode_lang_icons {
   width: 20%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.dark_mode_ico {
+  gap: 15px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -71,14 +77,41 @@
      object-fit: contain;
 }
 
+.li_remove_deco {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+#img_don {
+  margin-top: 6px;
+}
+
+#tag_guide {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
 @media screen and (max-width: 1200px) {
+  .navbar_header {
+    height: 280px;
+  }
   .sub_navbar {
     width: 100%;
-    height: 70px;
+    height: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+  .ul_list {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
   }
   .dark_mode_lang_icons {
     display: none;
