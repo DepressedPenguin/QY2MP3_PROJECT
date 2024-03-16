@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import "./style.css";
 import moon from "../dark_mode_icons/moon.png";
 import logo_dark from "../dark_mode_icons/white_modess.png";
 import logo_light from "../dark_mode_icons/dark_mode.png";
 import logo_sun from "../dark_mode_icons/sun.png";
 import donation_icon from "../guide_imgs/donation.png";
-import { Route, Routes, Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Guide from "../Guide";
 
@@ -82,16 +82,6 @@ export default function Navbar() {
               <img alt="sun icon" onClick={change_to_sun} src={logo_sun}></img>
             </div>
             <div id="split_border">|</div>
-            {/* OPTIONS LANGAUGES */}
-            {/* <div className="langs">
-              <select id="languages_select">
-                <option className="option">EN</option>
-                <option className="option">AR</option>
-                <option className="option">ES</option>
-                <option className="option">RU</option>
-                <option className="option">AL</option>
-              </select>
-            </div> */}
           </div>
         </div>
         {/* LOGO PLACE */}

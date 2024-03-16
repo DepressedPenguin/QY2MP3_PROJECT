@@ -1,11 +1,6 @@
 import React from "react";
 import "./style.css";
 
-import Navbar from "../Navbar";
-// import Input from "./Input";
-import Guide from "../Guide";
-import Footer from "../Footer";
-
 export default function Tou() {
   return (
     <>
@@ -23,7 +18,7 @@ export default function Tou() {
 
         <p>
           This document states the terms and conditions („Terms”) upon which
-          y2mate.nu („we” or „us”) will provide service to you on its websites,
+          QY2MP3.COM („we” or „us”) will provide service to you on its websites,
           including, without limitation, the above-listed websites
           (collectively, the „Website”). These Terms constitute a contractual
           agreement between you and us. By visiting, accessing, using, and/or
@@ -217,13 +212,13 @@ export default function Tou() {
 
         <p>
           Your privacy is important to us. We designed our{" "}
-          <a href="https://y2mate.nu/privacy-policy" target="_blank">
+          <a href="http://localhost:5173/PrivacyPolicy" target="_blank">
             Privacy Policy
           </a>{" "}
           to make important disclosures about how we collect and use your
           content and information and how you can use the Website to share such
           information with others. We encourage you to read the{" "}
-          <a href="https://y2mate.nu/privacy-policy" target="_blank">
+          <a href="http://localhost:5173/PrivacyPolicy" target="_blank">
             Privacy Policy
           </a>{" "}
           to help you make informed decisions.
@@ -344,7 +339,7 @@ export default function Tou() {
           relating to the Website please contact us at:
         </p>
 
-        <p>[Your Contact Information]</p>
+        <p>[zakariaelaro@gmail.com]</p>
       </div>
     </>
   );

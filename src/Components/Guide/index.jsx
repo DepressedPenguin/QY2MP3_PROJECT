@@ -9,7 +9,6 @@ export default function Guide() {
   return (
     <>
       <div className="Guide" id="headline_guide">
-        {/* <div className="empty_box"></div> */}
         <div className="main_guide">
           <div className="headline_h1">
             <h1>How to download YouTube videos ?</h1>
@@ -17,31 +16,30 @@ export default function Guide() {
           <div className="guide_imgs">
             <div className="box_show">
               <div className="title_pic">
-                <p>1-BRING ANY URL FROM YOUTUBE</p>
+                <p>1-Paste YouTube URL</p>
               </div>
               <div className="pic_guide">
-                <img alt="step 1" src={img_1}></img>
+                <img alt="step_1" src={img_1}></img>
               </div>
             </div>
             <div className="box_show">
               <div className="title_pic">
-                <p>2-CLICK CONVERT</p>
+                <p>2-Convert with a Click</p>
               </div>
               <div className="pic_guide">
-                <img alt="step 2" src={img_2}></img>
+                <img alt="step_2" src={img_2}></img>
               </div>
             </div>
             <div className="box_show">
               <div className="title_pic">
-                <p>3- WAIT 1S ,CLICK DOWNLOAD</p>
+                <p>3- Download Instantly</p>
               </div>
               <div className="pic_guide">
-                <img alt="step 3" src={img_3}></img>
+                <img alt="step_3" src={img_3}></img>
               </div>
             </div>
           </div>
         </div>
-        {/* <div className="social_media"></div> */}
       </div>
     </>
   );

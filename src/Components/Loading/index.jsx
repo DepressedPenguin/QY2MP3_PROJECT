@@ -1,10 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Route, Routes, Link, useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 import mp3_download_img from "../dark_mode_icons/mp3_icon.png";
-import img_back from "../Loading/back.png";
-import App from "../../App";
-import Home from "../Home/Home";
 
 export default function Loading({ url }) {
   // FOR TITLE
@@ -74,9 +71,9 @@ export default function Loading({ url }) {
   }
 
   useEffect(() => {
-    // Call the fetchapi function when the component mounts
+    // when componont mount
     fetchapi();
-  }, [url]); // Trigger the fetchapi function when the url prop changes
+  }, [url]); // trigger the fetchapi() function when the url prop changes
 
   return (
     <>
@@ -84,7 +81,7 @@ export default function Loading({ url }) {
         <div className="loading_convert">
           {/* IMG SONG */}
           <div className="img_song">
-            <img id="mp3_img" src={img} />
+            <img alt="mp3 img" id="mp3_img" src={img} />
           </div>
           <div className="deatils_song">
             <div className="box_deatils">

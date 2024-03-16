@@ -1,10 +1,6 @@
 import React from "react";
 import "./style.css";
 
-import Navbar from "../Navbar";
-import Footer from "../Footer";
-import Guide from "../Guide";
-
 import paypal_icon from "../guide_imgs/paypal.png";
 
 export default function Donation() {

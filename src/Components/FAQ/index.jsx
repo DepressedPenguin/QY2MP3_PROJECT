@@ -1,11 +1,6 @@
 import React from "react";
 import "./style.css";
 import { Route, Routes, Link, useNavigate } from "react-router-dom";
-import Navbar from "../Navbar";
-// import Input from "./Input";
-// import Guide from "../Guide";
-import Footer from "../Footer";
-import Contact from "../Contact";
 
 export default function FAQ() {
   return (

@@ -24,7 +24,6 @@ $bgColor: #191919;
   width: 75%;
   height: 60px;
   margin: auto;
-  // border-bottom: 1px solid grey;
 
   display: flex;
   align-items: center;
@@ -35,15 +34,12 @@ $bgColor: #191919;
 .left_home_element {
   width: 80%;
   height: 100%;
-  //   border: 1px solid red;
 }
 
 // DARK MODE ICONS
 .dark_mode_lang_icons {
   width: 20%;
-  // background-color: rgb(0, 0, 0);
   height: 100%;
-  //   border: 1px solid red;
 
   display: flex;
   align-items: center;
@@ -51,12 +47,10 @@ $bgColor: #191919;
 }
 
 .dark_mode_ico {
-  // width: 65%;
   gap: 15px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  // border: 1px solid wheat;
 }
 
 #split_border {
@@ -96,7 +90,6 @@ $bgColor: #191919;
   width: 40%;
   height: 70%;
   margin: auto;
-  //   border: 1px solid red;
 
   img {
     width: 100%;

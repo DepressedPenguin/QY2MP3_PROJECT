@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
 
-import Navbar from "../Navbar";
-// import Input from "./Input";
-import Guide from "../Guide";
-import Footer from "../Footer";
-
 import github_icon from "../contact_icons/github.png";
 import discord_icon from "../contact_icons/discord.png";
 import linkdin_icon from "../contact_icons/linkedin.png";

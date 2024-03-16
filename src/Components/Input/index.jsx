@@ -4,8 +4,8 @@ import Loading from "../Loading";
 
 export default function Input() {
   const [url, setUrl] = useState("");
-  const [showInput, setShowInput] = useState(true);
-  const [showLoading, setShowLoading] = useState(false); // Added state for loading visibility
+  const [showInput, setShowInput] = useState(true); // state visibility
+  const [showLoading, setShowLoading] = useState(false); // state visibility
 
   const urlInput = useRef(null);
 
@@ -13,7 +13,7 @@ export default function Input() {
     const urlValue = urlInput.current.value;
     setUrl(urlValue);
     setShowInput(false);
-    setShowLoading(true); // Show the loading component
+    setShowLoading(true); // Show the loading component become true
   };
 
   return (
@@ -39,7 +39,6 @@ export default function Input() {
         </div>
       )}
       {showLoading && <Loading url={url} />}{" "}
-      {/* Render loading component when showLoading is true */}
     </>
   );
 }

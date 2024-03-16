@@ -2,8 +2,6 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-import Input from "./Components/Input";
-import Guide from "./Components/Guide";
 import Footer from "./Components/Footer";
 
 import Loading from "./Components/Loading";
@@ -31,7 +29,6 @@ function App() {
           element={
             <>
               <Changelog />
-              <Guide />
             </>
           }
         />
@@ -40,10 +37,6 @@ function App() {
         <Route path="/Copyright" element={<Copyright />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/Tou" element={<Tou />} />
-        {/* <Footer /> */}
-
-        {/* MIX FOOTER ROUES */}
-        {/* <Route path="/Tou/PrivacyPolicy" element={<PrivacyPolicy />} /> */}
       </Routes>
       <Footer />
     </>

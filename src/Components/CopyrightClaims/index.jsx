@@ -1,11 +1,6 @@
 import React from "react";
 import "./style.css";
 
-import Navbar from "../Navbar";
-// import Input from "./Input";
-import Guide from "../Guide";
-import Footer from "../Footer";
-
 export default function Copyright() {
   return (
     <>
