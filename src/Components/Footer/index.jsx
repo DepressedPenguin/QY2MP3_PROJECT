@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Footer(props) {
   return (
     <>
-      <div className="Footer">
+      <footer className="Footer">
         <ul id="ul_footer">
           <li>
             <Link className="remove_deafult_i" to="Contact">
@@ -29,7 +29,7 @@ export default function Footer(props) {
             </Link>
           </li>
         </ul>
-      </div>
+      </footer>
     </>
   );
 }

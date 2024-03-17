@@ -7,8 +7,6 @@ import logo_sun from "../dark_mode_icons/sun.png";
 import donation_icon from "../guide_imgs/donation.png";
 import { Link } from "react-router-dom";
 
-import Guide from "../Guide";
-
 export default function Navbar() {
   // TRY DARK MODE IN NAVBAR
   // OLD TRICK
@@ -31,8 +29,6 @@ export default function Navbar() {
     img_dark_logo.current.src = logo_dark;
   };
 
-  // SCROOL DOWN TO THE GUIDE
-
   return (
     <>
       <div className="navbar_header" ref={refbg}>
@@ -40,7 +36,7 @@ export default function Navbar() {
           <div className="left_home_element">
             <ul className="ul_list">
               <li>
-                <Link className="li_remove_deco" to="/Home">
+                <Link className="li_remove_deco" to="/">
                   Home
                 </Link>
               </li>
@@ -65,14 +61,12 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                {/* <Link className="li_remove_deco" to="Donation"> */}
                 <a
                   href="https://www.paypal.com/paypalme/ZElaroussi"
                   target="_blank"
                 >
                   <img id="img_don" src={donation_icon} alt="Donation Icon" />
                 </a>
-                {/* </Link> */}
               </li>
             </ul>
           </div>

@@ -1,9 +1,6 @@
 // SCSS FILE
 
 .Guide {
-  width: 95%;
-  height: 450px;
-  // border: 1px solid red;
   border-radius: 5px;
   margin: auto;
 
@@ -15,13 +12,11 @@
 }
 
 .main_guide {
-  // background-color: #191919;
   width: 100%;
   height: 100%;
 }
 
 .headline_h1 {
-  // border-bottom: 1px solid white;
   font-size: 1rem;
   color: #191919;
   text-align: center;
@@ -29,17 +24,12 @@
 }
 
 .guide_imgs {
-  width: 100%;
-  height: 100%;
   font-size: 16px;
   font-weight: 700;
-  // border: 1px solid white;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 85%;
   grid-gap: 10px 10px;
-  // padding: 5px;
 }
 
 .box_show {

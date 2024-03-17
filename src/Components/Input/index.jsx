@@ -25,7 +25,11 @@ export default function Input() {
               <p>Insert a YouTube video URL :</p>
             </div>
             <div className="input_grids">
-              <input ref={urlInput} type="text" />
+              <input
+                placeholder="Past Youtube Link Here ..."
+                ref={urlInput}
+                type="text"
+              />
               <button className="btn_con" onClick={handleLoadingClick}>
                 Convert
               </button>

@@ -4,7 +4,7 @@ import "./style.css";
 import github_icon from "../contact_icons/github.png";
 import discord_icon from "../contact_icons/discord.png";
 import linkdin_icon from "../contact_icons/linkedin.png";
-import twitter_icon from "../contact_icons/twitter.png";
+import x_icon from "../contact_icons/x.png";
 
 export default function Contact() {
   // IF CLICK SHOW DISCORD USERNAME
@@ -49,7 +49,7 @@ export default function Contact() {
           </div>
           <div className="contac_us_boxs">
             <a href="https://twitter.com/DP_0_PENGUIN" target="blank">
-              <img alt="twitter icon" src={twitter_icon}></img>
+              <img alt="X icon" src={x_icon}></img>
             </a>
             <p>Twitter</p>
           </div>

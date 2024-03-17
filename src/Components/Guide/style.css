@@ -1,6 +1,4 @@
 .Guide {
-  width: 95%;
-  height: 450px;
   border-radius: 5px;
   margin: auto;
   display: flex;
@@ -23,13 +21,10 @@
 }
 
 .guide_imgs {
-  width: 100%;
-  height: 100%;
   font-size: 16px;
   font-weight: 700;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 85%;
   grid-gap: 10px 10px;
 }
 

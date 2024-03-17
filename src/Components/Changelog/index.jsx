@@ -14,6 +14,8 @@ export default function Changelog() {
               <p id="date_logs">2024-03-29</p>
               <p>Coming Soon</p>
             </div>
+            <div className="changelog_ann"></div>
+            <div className="changelog_ann"></div>
           </div>
         </div>
       </div>

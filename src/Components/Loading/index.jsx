@@ -100,7 +100,7 @@ export default function Loading({ url }) {
             </div>
           </div>
           <div className="download_song_button">
-            <a href={link}>
+            <a href={link} target="blank">
               <img src={mp3_download_img} alt="Download Icon" />
             </a>
             <p>Download</p>

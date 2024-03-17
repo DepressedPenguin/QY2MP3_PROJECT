@@ -14,13 +14,13 @@ import PrivacyPolicy from "./Components/PrivacyPolicy";
 import Tou from "./Components/Tou";
 import Home from "./Components/Home/Home";
 
-function App() {
+function App({ showin }) {
   return (
     <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/loading" element={<Loading />} />
+        <Route path="/loading" element={<Loading showin={showin} />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Faq" element={<Faq />} />
         <Route path="/Contact" element={<Contact />} />
