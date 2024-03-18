@@ -1,7 +1,7 @@
 <h1>QY2MP3</h1>
 <b>QY2MP3 is a web application that allows users to convert YouTube video URLs into downloadable MP3 songs using an API.<b/>
 <h2>Overview</hh2>
-QY2MP3 simplifies the process of converting YouTube videos into MP3 format, making it convenient for users to enjoy their favorite songs offline. By leveraging the provided API, users can seamlessly convert YouTube URLs into MP3 files with ease.
+<p>QY2MP3 simplifies the process of converting YouTube videos into MP3 format, making it convenient for users to enjoy their favorite songs offline. By leveraging the provided API, users can seamlessly convert YouTube URLs into MP3 files with ease.</p>
 
 <h3>Features</h3>
 <li>Convert YouTube video URLs to MP3 format.</li>
@@ -17,6 +17,7 @@ git clone https://github.com/DepressedPenguin/QY2MP3_PROJECT
 <h3>Install dependencies:</h3>
 <li>cd QY2MP3</li>
 <li>npm install</li>
+<small>Make sure to install `react-router-dom`:</small>
 
 <h4>Run the Application:</h4>
 npm start
