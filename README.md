@@ -1,6 +1,6 @@
 <h1>QY2MP3</h1>
 <b>QY2MP3 is a web application that allows users to convert YouTube video URLs into downloadable MP3 songs using an API.<b/>
-<h2>Overview</hh2>
+<h2>Overview</h2>
 <p>QY2MP3 simplifies the process of converting YouTube videos into MP3 format, making it convenient for users to enjoy their favorite songs offline. By leveraging the provided API, users can seamlessly convert YouTube URLs into MP3 files with ease.</p>
 
 <h3>Features</h3>
