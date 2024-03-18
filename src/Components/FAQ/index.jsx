@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Route, Routes, Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function FAQ() {
   return (
@@ -39,7 +39,6 @@ export default function FAQ() {
             </div>
           </div>
         </div>
-        {/* <Guide /> */}
       </div>
     </>
   );

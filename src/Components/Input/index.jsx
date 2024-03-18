@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./style.css";
 import Loading from "../Loading";
 
@@ -8,6 +8,13 @@ export default function Input() {
   const [showLoading, setShowLoading] = useState(false); // state visibility
 
   const urlInput = useRef(null);
+  const [date, setDate] = useState(() => new Date());
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setDate((prevDate) => new Date(prevDate.getTime() + 1000));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   const handleLoadingClick = () => {
     const urlValue = urlInput.current.value;
@@ -35,6 +42,7 @@ export default function Input() {
               </button>
             </div>
             <div className="qoute_convert">
+              <p id="time_zone">{date.toLocaleString()}</p>
               <p>
                 Fast Convert To <span id="mp3_color">MP3</span>
               </p>

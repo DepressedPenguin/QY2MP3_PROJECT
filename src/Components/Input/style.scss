@@ -49,6 +49,10 @@ $bgColor: #191919;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
   p {
     float: right;
   }
@@ -58,6 +62,13 @@ $bgColor: #191919;
     text-decoration: underline;
     font-weight: 700;
   }
+}
+
+#time_zone {
+  background-color: #191919;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
 }
 
 .input_grids input {

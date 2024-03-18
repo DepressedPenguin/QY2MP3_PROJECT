@@ -10,7 +10,6 @@ export default function Donation() {
         <div className="sub_donation">
           <a href="https://www.paypal.com/paypalme/ZElaroussi" target="blank">
             <img src={paypal_icon}></img>
-            {/* <p id="paypal_p">Paypal</p> */}
           </a>
         </div>
       </div>

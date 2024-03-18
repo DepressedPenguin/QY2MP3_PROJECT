@@ -91,11 +91,6 @@ export default function Loading({ url }) {
               <p className="author_p">Author : {author}</p>
             </div>
             <div className="box_deatils_with_btn">
-              <div className="backward_button">
-                <Link to="/Home">
-                  <button>BACK</button>
-                </Link>
-              </div>
               <p className="author_p">Video Id : {id}</p>
             </div>
           </div>

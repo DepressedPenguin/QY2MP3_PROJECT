@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./style.css";
 import moon from "../dark_mode_icons/moon.png";
 import logo_dark from "../dark_mode_icons/white_modess.png";

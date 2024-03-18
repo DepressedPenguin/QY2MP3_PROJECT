@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import Contact from "../Contact";
 import { Link } from "react-router-dom";
 
 export default function Footer(props) {
