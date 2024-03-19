@@ -37,8 +37,7 @@
 .qoute_convert {
   background-color: white;
   padding: 7px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -52,8 +51,9 @@
   font-weight: 700;
 }
 
-#time_zone {
+.time_zone {
   background-color: #191919;
+  border: 1px solid #191919;
   border-radius: 5px;
   padding: 5px;
   color: white;

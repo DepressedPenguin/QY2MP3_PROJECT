@@ -1,14 +1,16 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+// import "../DarkMode/style.scss";
 
-export default function FAQ() {
+export default function FAQ({ theme }) {
+  console.log(theme);
   return (
     <>
-      <div>
+      <div className={theme}>
         <div className="faq_section">
           <div className="faq_question">
-            <div className="box_quisitons_with_contact">
+            <div className="box_quisitons_with_contact background text">
               <h1>Frequently Asked Questions</h1>
               <button id="button_contact_faq">
                 <Link id="link_remove_deco_contact" to="/Contact">
@@ -16,19 +18,19 @@ export default function FAQ() {
                 </Link>
               </button>
             </div>
-            <div className="box_quisitons">
+            <div className="box_quisitons background text">
               <p className="bold_headline_faq">
                 Which platforms are supported?
               </p>
               <p>Currently we only support YouTube.</p>
             </div>
-            <div className="box_quisitons">
+            <div className="box_quisitons background text">
               <p className="bold_headline_faq">Which formats are supported?</p>
               <p>
                 Atm it is only possible to convert YouTube videos to MP3 (audio)
               </p>
             </div>
-            <div className="box_quisitons">
+            <div className="box_quisitons background text">
               <p className="bold_headline_faq">I am receiving an error.</p>
               <p>Please make sure that your video is not:</p>
               <ul className="ul_qus">

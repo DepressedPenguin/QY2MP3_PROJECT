@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./style.css";
+import "../DarkMode/style.scss";
 
 import github_icon from "../contact_icons/github.png";
 import discord_icon from "../contact_icons/discord.png";
 import linkdin_icon from "../contact_icons/linkedin.png";
 import x_icon from "../contact_icons/x.png";
 
-export default function Contact() {
+export default function Contact({ theme }) {
   // IF CLICK SHOW DISCORD USERNAME
   const [discordname, setdiscordname] = useState(null);
   const discord_name = "depressed_penguin";
@@ -16,7 +17,7 @@ export default function Contact() {
 
   return (
     <>
-      <div>
+      <div className={theme}>
         <div className="Contact_Us_Section">
           <div className="contac_us_boxs">
             <a href="https://github.com/DepressedPenguin" target="blank">

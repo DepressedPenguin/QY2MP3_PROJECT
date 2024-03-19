@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
+import "../DarkMode/style.scss";
 import mp3_download_img from "../dark_mode_icons/mp3_icon.png";
 
-export default function Loading({ url }) {
+export default function Loading({ url, theme }) {
+  console.log(theme);
   // FOR TITLE
   const [title, settitle] = useState();
   // FOR author
@@ -77,28 +79,30 @@ export default function Loading({ url }) {
 
   return (
     <>
-      <div>
-        <div className="loading_convert">
-          {/* IMG SONG */}
-          <div className="img_song">
-            <img alt="mp3 img" id="mp3_img" src={img} />
-          </div>
-          <div className="deatils_song">
-            <div className="box_deatils">
-              <p id="title_song_api">{title}</p>
+      <div className={theme}>
+        <div>
+          <div className="loading_convert background">
+            {/* IMG SONG */}
+            <div className="img_song">
+              <img alt="mp3 img" id="mp3_img" src={img} />
             </div>
-            <div className="box_deatils">
-              <p className="author_p">Author : {author}</p>
+            <div className="deatils_song">
+              <div className="box_deatils">
+                <p id="title_song_api">{title}</p>
+              </div>
+              <div className="box_deatils">
+                <p className="author_p">Author : {author}</p>
+              </div>
+              <div className="box_deatils_with_btn">
+                <p className="author_p">Video Id : {id}</p>
+              </div>
             </div>
-            <div className="box_deatils_with_btn">
-              <p className="author_p">Video Id : {id}</p>
+            <div className="download_song_button">
+              <a href={link} target="blank">
+                <img src={mp3_download_img} alt="Download Icon" />
+              </a>
+              <p>Download</p>
             </div>
-          </div>
-          <div className="download_song_button">
-            <a href={link} target="blank">
-              <img src={mp3_download_img} alt="Download Icon" />
-            </a>
-            <p>Download</p>
           </div>
         </div>
       </div>

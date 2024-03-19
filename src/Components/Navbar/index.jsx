@@ -7,80 +7,77 @@ import logo_sun from "../dark_mode_icons/sun.png";
 import donation_icon from "../guide_imgs/donation.png";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
-  // TRY DARK MODE IN NAVBAR
-  // OLD TRICK
-  //USE REF TO GET THE NAV BACKGROUND
-  const refbg = useRef(null);
-  const elements_nav = useRef(null);
-  const img_dark_logo = useRef(null);
-  const change_to_sun = () => {
-    refbg.current.style.backgroundColor = "white";
-    elements_nav.current.style.backgroundColor = "#191919";
-    elements_nav.current.style.borderRadius = "5px";
-    img_dark_logo.current.src = logo_light;
-  };
+// STYLE DARK MODE
+import "../DarkMode/style.scss";
 
-  // CHANGE TO MOON
-  const change_to_moon = () => {
-    refbg.current.style.backgroundColor = "#191919";
-    elements_nav.current.style.backgroundColor = "#191919";
-    elements_nav.current.style.borderRadius = "0";
-    img_dark_logo.current.src = logo_dark;
-  };
+export default function Navbar({ theme, darkHandler }) {
+  // TRY DARK MODE IN NAVBAR
 
   return (
     <>
-      <div className="navbar_header" ref={refbg}>
-        <div className="sub_navbar" ref={elements_nav}>
-          <div className="left_home_element">
-            <ul className="ul_list">
-              <li>
-                <Link className="li_remove_deco" to="/">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link className="li_remove_deco" to="Changelog">
-                  Changelog
-                </Link>
-              </li>
-              <li>
-                <a id="tag_guide" href="#headline_guide">
-                  Guide
-                </a>
-              </li>
-              <li>
-                <Link className="li_remove_deco" to="faq">
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link className="li_remove_deco" to="Contact">
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="https://www.paypal.com/paypalme/ZElaroussi"
-                  target="_blank"
-                >
-                  <img id="img_don" src={donation_icon} alt="Donation Icon" />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="dark_mode_lang_icons">
-            <div className="dark_mode_ico">
-              <img alt="moon icon" onClick={change_to_moon} src={moon}></img>
-              <img alt="sun icon" onClick={change_to_sun} src={logo_sun}></img>
+      <div className={theme}>
+        <div className="navbar_header background">
+          <div className="sub_navbar">
+            <div className="left_home_element">
+              <ul className="ul_list text">
+                <li className="text">
+                  <Link to="/" className="li_remove_deco text">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link className="li_remove_deco text" to="Changelog">
+                    Changelog
+                  </Link>
+                </li>
+                <li>
+                  <a href="#headline_guide" className="li_remove_deco text">
+                    Guide
+                  </a>
+                </li>
+                <li>
+                  <Link className="li_remove_deco text" to="faq">
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link className="li_remove_deco text" to="Contact">
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="https://www.paypal.com/paypalme/ZElaroussi"
+                    target="_blank"
+                  >
+                    <img id="img_don" src={donation_icon} alt="Donation Icon" />
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div id="split_border">|</div>
+            <div className="dark_mode_lang_icons">
+              <div id="split_border">|</div>
+              <div className="dark_mode_ico">
+                {theme === "light" ? (
+                  <img onClick={darkHandler} alt="moon icon" src={moon}></img>
+                ) : (
+                  <img
+                    onClick={darkHandler}
+                    alt="sun icon"
+                    src={logo_sun}
+                  ></img>
+                )}
+              </div>
+            </div>
           </div>
-        </div>
-        {/* LOGO PLACE */}
-        <div className="logo">
-          <img alt="logo" ref={img_dark_logo} src={logo_dark}></img>
+          {/* LOGO PLACE */}
+          <div className="logo">
+            {theme === "light" ? (
+              <img alt="logo" src={logo_light}></img>
+            ) : (
+              <img alt="logo" src={logo_dark}></img>
+            )}
+          </div>
         </div>
       </div>
     </>
