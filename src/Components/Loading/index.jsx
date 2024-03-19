@@ -5,7 +5,6 @@ import "../DarkMode/style.scss";
 import mp3_download_img from "../dark_mode_icons/mp3_icon.png";
 
 export default function Loading({ url, theme }) {
-  console.log(theme);
   // FOR TITLE
   const [title, settitle] = useState();
   // FOR author
@@ -18,8 +17,6 @@ export default function Loading({ url, theme }) {
   const [id, setid] = useState();
 
   function getYouTubeVideoId(url) {
-    console.log(url);
-
     const regex =
       /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/;
     const match = url.match(regex);
@@ -55,12 +52,9 @@ export default function Loading({ url, theme }) {
       },
     };
 
-    console.log(apiURL);
-
     try {
       const response = await fetch(apiURL, options);
       const result = await response.json();
-      console.log(result);
       settitle(result.title);
       setauthor(result.author);
       setimg(result.thumb);

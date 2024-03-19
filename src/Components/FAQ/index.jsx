@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 // import "../DarkMode/style.scss";
 
 export default function FAQ({ theme }) {
-  console.log(theme);
   return (
     <>
       <div className={theme}>

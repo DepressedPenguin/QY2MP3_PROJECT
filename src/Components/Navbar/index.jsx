@@ -56,7 +56,7 @@ export default function Navbar({ theme, darkHandler }) {
               </ul>
             </div>
             <div className="dark_mode_lang_icons">
-              <div id="split_border">|</div>
+              <div class="split_border text">|</div>
               <div className="dark_mode_ico">
                 {theme === "light" ? (
                   <img onClick={darkHandler} alt="moon icon" src={moon}></img>
