@@ -5,6 +5,7 @@ import logo_dark from "../dark_mode_icons/white_modess.png";
 import logo_light from "../dark_mode_icons/dark_mode.png";
 import logo_sun from "../dark_mode_icons/sun.png";
 import donation_icon from "../guide_imgs/donation.png";
+import drop_down from "../dark_mode_icons/drop_down.png";
 import { Link } from "react-router-dom";
 
 // STYLE DARK MODE
@@ -13,10 +14,22 @@ import "../DarkMode/style.scss";
 export default function Navbar({ theme, darkHandler }) {
   // TRY DARK MODE IN NAVBAR
 
+  // const [showNavbar, setShowNavbar] = useState(false);
+
+  // const handleClickDropdown = () => {
+  //   setShowNavbar(!showNavbar);
+  // };
+
   return (
     <>
       <div className={theme}>
-        <div className="navbar_header background">
+        {/* <div onClick={handleClickDropdown} className="img_dropdown">
+          <img className="dropdown_icon" src={drop_down} />
+        </div> */}
+        <div
+          className="navbar_header background"
+          // style={{ display: showNavbar ? "none" : "block" }}
+        >
           <div className="sub_navbar">
             <div className="left_home_element">
               <ul className="ul_list text">

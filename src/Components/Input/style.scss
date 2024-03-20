@@ -91,7 +91,7 @@ input::placeholder {
 .input_grids button {
   width: 15%;
   height: 46px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Mako", sans-serif;
   background-color: $bgColor;
   cursor: pointer;
   color: white;
@@ -103,7 +103,6 @@ input::placeholder {
 .btn_con {
   width: 15%;
   height: 46px;
-  font-family: "Nunito", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,6 +122,10 @@ input::placeholder {
 
   //   MAKE INPUT TEXT A LITTLE BIT SMALLER
   .input_grids button {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .time_zone {
+    display: none;
   }
 }

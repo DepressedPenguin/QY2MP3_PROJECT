@@ -11,6 +11,7 @@
 
 .contac_us_boxs {
   background-color: #191919;
+  border: 1px solid #191919;
   border-radius: 5px;
   color: white;
   display: flex;
