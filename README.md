@@ -7,6 +7,8 @@
 <li>Convert YouTube video URLs to MP3 format.</li>
 <li>Download converted MP3 files for offline listening.</li>
 <li>Easy-to-use interface for a seamless user experience.</li>
+<li>Dark mode implementation for improved user experience in low-light environments.</li>
+s
 
 <h2>Usage</h2>
 Installation:
