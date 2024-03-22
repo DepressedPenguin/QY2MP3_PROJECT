@@ -58,14 +58,14 @@ export default function Navbar({ theme, darkHandler }) {
                     Contact Us
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="https://www.paypal.com/paypalme/ZElaroussi"
                     target="_blank"
                   >
                     <img id="img_don" src={donation_icon} alt="Donation Icon" />
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="dark_mode_lang_icons">

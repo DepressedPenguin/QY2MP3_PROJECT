@@ -8,6 +8,7 @@
     transition: 0.6s background-color, 0.6s opacity, 0.6s filter, 0.6s transform;
     opacity: 1;
     filter: grayscale(0%);
+    border-bottom: 1px solid #191919;
     transform: scale(1);
   }
 }
@@ -20,7 +21,7 @@
   .background {
     background-color: #191919;
     transition: 0.6s background-color, 0.6s opacity, 0.6s filter, 0.6s transform;
-    filter: grayscale(100%);
+    // filter: grayscale(100%);
     transform: scale(1);
   }
 }
