@@ -13,6 +13,7 @@ import Donation from "./Components/Donation";
 import Copyright from "./Components/CopyrightClaims";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
 import Tou from "./Components/Tou";
+import History from "./Components/History";
 
 function App() {
   // MAKE CONST FOR DARK MODE
@@ -44,6 +45,7 @@ function App() {
         <Route path="/Copyright" element={<Copyright theme={theme} />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/Tou" element={<Tou />} />
+        <Route path="/History" element={<History />} />
       </Routes>
       <Footer />
     </>

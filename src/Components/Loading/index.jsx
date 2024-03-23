@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import "./style.css";
 import "../DarkMode/style.scss";
 import mp3_download_img from "../dark_mode_icons/mp3_icon.png";
+import History from "../History";
+import Navbar from "../Navbar";
+
+export const historyContext = React.createContext();
 
 export default function Loading({ url, theme }) {
   // FOR TITLE
@@ -15,6 +19,12 @@ export default function Loading({ url, theme }) {
   const [link, setlink] = useState();
   // VIDEO ID
   const [id, setid] = useState();
+
+  // HISTORY STATE
+  const [lisHistory, setlisHistory] = useState([]);
+  // const [displayhistory, setdisplayhistory] = useState(false);
+  // const [displayloading, setdisplayloading] = useState(true);
+  // const navigate = useNavigate();
 
   function getYouTubeVideoId(url) {
     const regex =
@@ -60,11 +70,30 @@ export default function Loading({ url, theme }) {
       setimg(result.thumb);
       setlink(result.link);
       setid(result.id);
+
+      setlisHistory((prev) => {
+        return [
+          ...prev,
+          result.title,
+          result.author,
+          result.thumb,
+          result.link,
+          result.id,
+        ];
+      });
+
       return result;
     } catch (error) {
       console.error(error);
     }
   }
+
+  // const handlHistory = () => {
+  //   setdisplayhistory(true);
+  //   setdisplayloading(true);
+  // };
+
+  // console.log(lisHistory);
 
   useEffect(() => {
     // when componont mount
@@ -73,6 +102,7 @@ export default function Loading({ url, theme }) {
 
   return (
     <>
+      {/* {displayloading && ( */}
       <div className={theme}>
         <div>
           <div className="loading_convert background">
@@ -96,10 +126,18 @@ export default function Loading({ url, theme }) {
                 <img src={mp3_download_img} alt="Download Icon" />
               </a>
               <p>Download</p>
+              {/* <button onClick={handlHistory}>Show</button> */}
             </div>
           </div>
         </div>
       </div>
+      {/* )}
+      {displayhistory && (
+        <historyContext.Provider value={lisHistory}>
+          <History />
+        </historyContext.Provider>
+      )}
+      <Navbar handlHistory={handlHistory} />; */}
     </>
   );
 }

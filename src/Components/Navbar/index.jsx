@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 // STYLE DARK MODE
 import "../DarkMode/style.scss";
 
-export default function Navbar({ theme, darkHandler }) {
+export default function Navbar({ theme, darkHandler, handlHistory }) {
   // TRY DARK MODE IN NAVBAR
 
   // const [showNavbar, setShowNavbar] = useState(false);
@@ -53,6 +53,11 @@ export default function Navbar({ theme, darkHandler }) {
                     FAQ
                   </Link>
                 </li>
+                {/* <li>
+                  <Link className="li_remove_deco text" onClick={handlHistory}>
+                    History
+                  </Link>
+                </li> */}
                 <li>
                   <Link className="li_remove_deco text" to="Contact">
                     Contact Us
