@@ -40,6 +40,7 @@ Open a web browser and navigate to http://localhost:3000 to access the QY2MP3 ap
 <li>Vite: Fast build tool for modern web development.</li>
 <li>API: Integration with an API for YouTube video to MP3 conversion.</li>
 <li>HTML/CSS/SCSS: Markup and styling for the application.</li>
+
 <h3>Contributing</h3>
 
 <p>Contributions to QY2MP3 are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.</p>

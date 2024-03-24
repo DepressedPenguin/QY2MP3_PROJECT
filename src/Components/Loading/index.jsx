@@ -71,16 +71,16 @@ export default function Loading({ url, theme }) {
       setlink(result.link);
       setid(result.id);
 
-      setlisHistory((prev) => {
-        return [
-          ...prev,
-          result.title,
-          result.author,
-          result.thumb,
-          result.link,
-          result.id,
-        ];
-      });
+      // setlisHistory((prev) => {
+      //   return [
+      //     ...prev,
+      //     result.title,
+      //     result.author,
+      //     result.thumb,
+      //     result.link,
+      //     result.id,
+      //   ];
+      // });
 
       return result;
     } catch (error) {
@@ -123,7 +123,11 @@ export default function Loading({ url, theme }) {
             </div>
             <div className="download_song_button">
               <a href={link} target="blank">
-                <img src={mp3_download_img} alt="Download Icon" />
+                <img
+                  className="img_fix"
+                  src={mp3_download_img}
+                  alt="Download Icon"
+                />
               </a>
               <p>Download</p>
               {/* <button onClick={handlHistory}>Show</button> */}
