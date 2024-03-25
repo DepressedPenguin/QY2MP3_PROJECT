@@ -57,8 +57,8 @@ export default function Loading({ url, theme }) {
       method: "GET",
       url: apiURL,
       headers: {
-        "X-RapidAPI-Key": "a19294d6f9msh0184e27f0ecd328p1d845fjsn8875486caeaa",
-        "X-RapidAPI-Host": "youtube-mp3-download1.p.rapidapi.com",
+        "X-RapidAPI-Key": REACT_APP_API_KEY,
+        "X-RapidAPI-Host": REACT_APP_HOST_API,
       },
     };
 

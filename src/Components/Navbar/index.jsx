@@ -14,21 +14,21 @@ import "../DarkMode/style.scss";
 export default function Navbar({ theme, darkHandler, handlHistory }) {
   // TRY DARK MODE IN NAVBAR
 
-  const [showNavbar, setShowNavbar] = useState(false);
+  // const [showNavbar, setShowNavbar] = useState(false);
 
-  const handleClickDropdown = () => {
-    setShowNavbar(!showNavbar);
-  };
+  // const handleClickDropdown = () => {
+  //   setShowNavbar(!showNavbar);
+  // };
 
   return (
     <>
       <div className={theme}>
-        <div onClick={handleClickDropdown} className="img_dropdown background">
+        {/* <div onClick={handleClickDropdown} className="img_dropdown background">
           <i className="fa fa-bars toggle text"></i>
-        </div>
+        </div> */}
         <div
           className="navbar_header background"
-          style={{ display: showNavbar ? "none" : "block" }}
+          // style={{ display: showNavbar ? "none" : "block" }}
         >
           <div className="sub_navbar">
             <div className="left_home_element">
