@@ -16,6 +16,7 @@ $bgColor: #191919;
 .navbar_header {
   width: 100%;
   height: 200px;
+  // border: 2px solid red;
   // background-color: $bgColor;
 }
 
@@ -106,8 +107,24 @@ $bgColor: #191919;
 }
 
 // DROPDOWN ICON
+.toggle {
+  font-size: 30px;
+  margin-right: 15px;
+  float: left;
+  // color: white;
+  float: right;
+}
 
 .img_dropdown {
+  width: 99%;
+  margin: auto;
+  // border: 1px solid red;
+  // background-color: #191919;
+  // border-bottom: 1px solid white;
+  display: flex;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
   display: none;
 }
 
@@ -115,25 +132,25 @@ $bgColor: #191919;
   .navbar_header {
     height: 300px;
     // border: 1px solid red;
-    // display: none;
+  }
+
+  .toggle {
+    margin-left: 20px;
   }
 
   .img_dropdown {
     display: block;
     // border: 1px solid red;
-    width: 95%;
-    padding: 5px;
+    top: 0;
+    // width: 95%;
+    padding: 10px;
     margin: auto;
     // background-color: #191919;
-    border-radius: 5px;
+    // border-radius: 5px;
     display: flex;
     // margin-left: 20px;
-    margin-top: 10px;
-    justify-content: center;
-
-    img {
-      margin-left: 20px;
-    }
+    // margin-top: 10px;
+    justify-content: flex-end;
   }
 
   // MAKE FLEX DIRECTION COLUMN
