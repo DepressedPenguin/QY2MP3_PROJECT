@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./style.css";
+import "./style.scss";
 import moon from "../dark_mode_icons/moon.png";
 import logo_dark from "../dark_mode_icons/white_modess.png";
 import logo_light from "../dark_mode_icons/dark_mode.png";

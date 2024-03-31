@@ -57,8 +57,8 @@ export default function Loading({ url, theme }) {
       method: "GET",
       url: apiURL,
       headers: {
-        "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
-        "X-RapidAPI-Host": process.env.REACT_APP_HOST_API,
+        "X-RapidAPI-Key": import.meta.env.VITE_APP_API_KEY,
+        "X-RapidAPI-Host": import.meta.env.VITE_APP_API_HOST,
       },
     };
 
