@@ -14,10 +14,12 @@ import Copyright from "./Components/CopyrightClaims";
 import PrivacyPolicy from "./Components/PrivacyPolicy";
 import Tou from "./Components/Tou";
 import History from "./Components/History";
+import AdsTxt from "./Components/AdsTxt";
+import AdsPage from "./Components/AdsTxt/AdstxtPage";
 
 function App() {
   // MAKE CONST FOR DARK MODE
-  const [theme, Settheme] = useState("light");
+  const [theme, Settheme] = useState("dark");
   // HANDL CLICK DARK
   const darkHandler = () => {
     Settheme(theme === "light" ? "dark" : "light");
@@ -46,6 +48,7 @@ function App() {
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/Tou" element={<Tou />} />
         <Route path="/History" element={<History />} />
+        <Route path="Ads.txt" element={<AdsPage />} />
       </Routes>
       <Footer />
     </>
